@@ -9,7 +9,7 @@ router.post("/add-products", productController.addProduct)
 router.get("/get/:get-productById",productController.getProductById)
 
 
-router.get("/uploads/:imageName", (req, res) => {
+router.get("/:imageName", (req, res) => {
     const imageName = req.params.imageName;
     res.sendFile(path.join(__dirname, "..", "uploads", imageName));
 });
