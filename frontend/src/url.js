@@ -1,2 +1,2 @@
-const url="http://localhost:4000"
+const url="https://atozicecreamdashboard.onrender.com"
 export default url
