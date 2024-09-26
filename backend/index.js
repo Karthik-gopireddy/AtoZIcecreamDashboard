@@ -37,6 +37,7 @@ mongoose.connect(process.env.MONGODB_URL)
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
+
 app.use("/vendor", vendorRoutes)
 app.use("/product", productRoutes)
 
