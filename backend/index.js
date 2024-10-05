@@ -22,6 +22,9 @@ const PORT = process.env.PORT || 4000
 dotEnv.config()
 app.use(bodyParser.json())
 
+
+
+
 app.use(cors());
 
 mongoose.connect(process.env.MONGODB_URL)
@@ -90,9 +93,6 @@ app.put('/product/update-product/:id', upload.none(), async (req, res) => {
         res.status(500).send('Server error');
     }
 });
-
-
-
 
 
 

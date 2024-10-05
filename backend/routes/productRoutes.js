@@ -15,6 +15,8 @@ router.get("uploads/:imageName", (req, res) => {
 });
 
 
+
+
 // router.put("/update-product/:productId", productController.updateProductById);
 
 
